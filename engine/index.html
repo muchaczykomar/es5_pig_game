@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Lucky Pig</title>
+</head>
+
+<body>
+<div class="title-wrapper">
+    <div class="title-panel">
+        <div class="rules">
+            <h2>Lucky Pig Game Rules!</h2>
+            <ul>
+                <li>The game has 2 players, playing in rounds,</li>
+                <li>In each turn, a player rolls a dice as many times as he whishes,</li>
+                <li>Each result get added to his ROUND score,</li>
+                <li>If the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn.</li>
+                <li>If the player rolls two 6 in a row, his entire GAME and ROUND scores gets lost. After that, it's the next player's turn.</li>
+                <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score.
+                    After that, it's the next player's turn
+                </li>
+                <li>The first player to reach 100 points on GLOBAL score wins the game</li>
+                <li>You can change amount of points, You need to reach for winning, also You can add names of the Players at the beginning of the game.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper clearfix">
+    <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Gracz 1</div>
+        <div class="player-score" id="score-0">43</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Aktualny wynik</div>
+            <div class="player-current-score" id="current-0">11</div>
+        </div>
+    </div>
+
+    <div class="player-1-panel">
+        <div class="player-name" id="name-1">Gracz 2</div>
+        <div class="player-score" id="score-1">72</div>
+        <div class="player-current-box">
+            <div class="player-current-label">Aktualny wynik</div>
+            <div class="player-current-score" id="current-1">0</div>
+        </div>
+    </div>
+
+    <div class="score-wrapper">
+        <label class="bold" for="win-score">Wygrywa ten kto jako pierwszy uzbiera <input type="number" id="win-score"
+                                                                                         class="win-score" value="100">Punktów</label>
+    </div>
+
+    <button class="btn-new"><i class="ion-ios-plus-outline"></i>Nowa gra</button>
+    <button class="btn-roll"><i class="ion-ios-loop"></i>Rzuć kostką</button>
+    <button class="btn-hold"><i class="ion-ios-download-outline"></i>Wstrzymaj</button>
+
+    <img src="dice-5.png" alt="Dice" class="dice">
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

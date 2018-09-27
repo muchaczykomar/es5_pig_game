@@ -61,8 +61,11 @@ body {
     border: none;
     background: rgba(247, 247, 247, 0.8);
     color: #222222;
+    transition: ease 0.5s background-color;
+    transition: ease 0.5s color;
 
 }
+
 .rules h2 {
     margin: 0 0 10px 15px;
 }
@@ -193,6 +196,19 @@ i {
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
+}
+.previous {
+    transform: scale(0.5);
+    top: 75px;
+}
+.player-0 {
+    left: 37%
+}
+.player-1 {
+    left: 53%
+}
+.hide-dice {
+    visibility: hidden;
 }
 .bold {
     font-weight: 700;
